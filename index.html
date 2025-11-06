@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MusicVizualizer 3D</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ui-panel">
+      <label class="file-label">
+        <input id="file-input" type="file" accept="audio/mp3,audio/mpeg" />
+        Escolha um arquivo MP3
+      </label>
+      <div id="status">Selecione uma música para começar</div>
+    </div>
+    <div id="app"></div>
+
+    <audio id="audio" crossorigin="anonymous"></audio>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
